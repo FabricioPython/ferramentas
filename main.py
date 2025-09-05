@@ -2,6 +2,7 @@ import flet as ft
 import keyboard
 
 # testes com flet
+# pyinstaller --onefile --noconsole main.py
 
 def main(page: ft.Page):
     page.title = "Contador IMB - BYFAB"
@@ -27,7 +28,7 @@ def main(page: ft.Page):
     def on_key_press(event):
 
         #print(f'Tecla pressionada: {event.name}')
-        if event.name == 'tab' and page.chave == True:
+        if event.name == 'shift' and page.chave == True:
             txt_number.value = str(int(txt_number.value) + 1)
             page.update()
 
