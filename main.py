@@ -20,6 +20,14 @@ def main(page: ft.Page):
             weight=ft.FontWeight.NORMAL,
         )
     
+
+    img = ft.Image(
+        src=f"IRM_BIG.D-a19acbd4.png",
+        width=200,
+        height=280,
+        fit=ft.ImageFit.CONTAIN,
+    )
+    
     def set_number(e):
         if not len(txt_number.value) == 0:
             count.value = int(txt_number.value)
@@ -62,6 +70,7 @@ def main(page: ft.Page):
     keyboard.on_press(on_key_press)
 
     page.add(
+        ft.Row([img], alignment=ft.MainAxisAlignment.CENTER),
         ft.Row([count],alignment=ft.MainAxisAlignment.CENTER),
         ft.Row(
             [
