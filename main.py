@@ -22,7 +22,7 @@ def main(page: ft.Page):
     
 
     img = ft.Image(
-        src=f"IRM_BIG.D-a19acbd4.png",
+        src=f"logo.png",
         width=200,
         height=280,
         fit=ft.ImageFit.CONTAIN,
